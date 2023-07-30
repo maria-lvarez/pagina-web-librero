@@ -1,0 +1,149 @@
+
+h1{
+    text-align: center;
+}
+
+.btn-outline-success{
+ border-color: #10f2ae;
+ color: #10f2ae;
+}
+
+.btn-outline-info{
+    border-color: #10f2ae;
+    color: #10f2ae;
+}
+#noticias{
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.30 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+}
+
+#carousel-noticias .carousel-item{
+    height: 500px;
+}
+#carousel-noticias .carousel-caption{
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+}
+
+.carousel-item{
+    height: 400px;
+}
+
+.carousel-caption{
+    color:black;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #6610f2!important;
+    height: 5px;
+}
+
+.caption-cards{
+    text-shadow: 3px 5px 30px #000000;
+    text-align:center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+}
+
+.card-text{
+    font-size: small;
+    text-align: justify;
+}
+
+#boton1{
+    text-shadow: 3px 5px 30px #000000;
+    text-align:center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border-color: #10f2ae;
+    color: rgb(244, 240, 240);
+}
+
+#boton2{
+    text-shadow: 3px 5px 30px #000000;
+    text-align:center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border-color: #10f2ae;
+    color: rgb(255, 255, 255);
+}
+
+#boton3{
+    text-shadow: 3px 5px 30px #000000;
+    text-align:center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border-color: #10f2ae;
+    color: rgb(248, 246, 246);
+}
+
+#boton4{
+    text-shadow: 3px 5px 30px #000000;
+    text-align:center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border-color: #10f2ae;
+    color: rgb(251, 251, 251);
+}
+
+#albummanga{
+    display: none;
+    
+}
+
+#albumlibros{
+ display: none;
+}
+
+#texto-inicio-se{
+    text-align: justify;
+}
+
+.form-floating{
+    text-align:center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.05 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border-color: #10f2ae;
+}
+
+.btn-primary{
+    text-align:center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.05 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border-color: #10f2ae;
+    color: #10f2ae;
+}

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi primer pàgina con bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container-fluid">
+    <header class="row">
+
+        <nav class="navbar navbar-expand-lg fixed-top bg-dark border-bottom border-bottom-dark" data-bs-theme="dark" >
+            <div class="container-fluid">
+              <a class="navbar-brand p-0 g-1 m-0" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+              </svg></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#manga-card" role="button" data-bs-toggle="dropdown" aria-expanded="false">Manga</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Shonen</a></li>
+                        <li><a class="dropdown-item" href="#">Shoujo</a></li>
+                        <li><a class="dropdown-item" href="#">Gore</a></li>
+                        <li><a class="dropdown-item" href="#">sobrenatural</a></li>
+                        <li><a class="dropdown-item" href="#">comedia</a></li>
+                        <li><a class="dropdown-item" href="#">Magia</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Isekai</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#libros-card" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Libros
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Misterio</a></li>
+                      <li><a class="dropdown-item" href="#">Fantasia</a></li>
+                      <li><a class="dropdown-item" href="#">Historico</a></li>
+                      <li><a class="dropdown-item" href="#">Found family</a></li>
+                      <li><a class="dropdown-item" href="#">Web novel</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Danmei</a></li>
+                      <li><a class="dropdown-item" href="#">Baihe</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#noticias">Noticias</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+                <button class="btn mx-2 btn-outline-info" type="submit" href="#inicia-sesion">Inicia secion </button>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="row justify-content-center">
+        <section class="pt-lg-5 mt-4 bg-body-tertiary rounded-3" id="home">
+            <div class="container-fluid py-5 text-center">
+                <h1 class="display-5 fw-bold">Bienvenidos al librero</h1>
+                <p class="col-md-9 fs-4 mx-auto my-4">Un lugar para ratones de biblioteca.</p>
+            </div>
+        </section>
+
+
+      <section class="container">
+        <h1 class="display-5 fw-bold my-4 bg-body-tertiary rounded-3" id="noticias">Noticias</h1>
+
+
+        <section id="carousel-noticias" class="carousel carousel-dark slide carousel-fade col-md-12">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/orv.png" class="d-block w-100" alt="orv">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Omniscient Readers Viewpoint</h5>
+                  <p>Orv obtendra una adaptacion a liveaction con  tentativamente con los actores Ahn Hyo Seob como Kim Dokja y Lee Min Ho como Yoo Joonghyuk.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/preventa-hov.jpg" class="d-block w-100 " alt="hualian">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Heavens officials blessings</h5>
+                  <p>Inicia preventa para volumen 8.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/wangxian.jpg" class="d-block w-100" alt="wangxian">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Grandmaster of demonic cultivation</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-noticias" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-noticias" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+      </section>
+      </section>
+
+
+        <div class="container px-4 py-5">
+
+          <h2 class="pb-2 border-bottom">¿Qué quieres leer?</h2>
+        
+            <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4" id="custom-cards">
+
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(imagenes/hanako.jpg);">
+                  <div class="d-flex flex-column h-100 p-5  text-white text-shadow-1">
+                    <h3 class="caption-cards pt-5 mt-5 display-6 lh-1 fw-bold" id="manga-card">Manga</h3>
+                 
+                    <button id="boton1" type="button" class="btn tw fw-bold" onclick="document.getElementById('albummanga').style.display = 'block';document.getElementById('boton1').style.display = 'none';document.getElementById('boton2').style.display = 'block';" style="display: block;" >Mostrar</button>
+                    <button id="boton2" type="button" class="btn tw fw-bold" onclick="document.getElementById('albummanga').style.display = 'none';document.getElementById('boton2').style.display = 'none';document.getElementById('boton1').style.display = 'block';" style="display: none;">Ocultar</button>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('imagenes/heavens-special-edition1.png');">
+                  <div class="d-flex flex-column h-100 p-5  text-white text-shadow-1">
+                    <h3 class="caption-cards pt-5 mt-5  display-6 lh-1 fw-bold" id="libros-card" >Libros</h3>
+
+                    <button id="boton3" type="button" class="btn tw fw-bold" onclick="document.getElementById('albumlibros').style.display = 'block';document.getElementById('boton3').style.display = 'none';document.getElementById('boton4').style.display = 'block';" style="display: block;">Mostrar</button>
+                    <button id="boton4" type="button" class="btn tw fw-bold" onclick="document.getElementById('albumlibros').style.display = 'none';document.getElementById('boton4').style.display = 'none';document.getElementById('boton3').style.display = 'block';" style="display: none;">Ocultar</button>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+            </div>
+         </div>
+
+      
+    <section id="albummanga">
+      <div class="album bg-body-tertiary">
+        <div class="container">
+
+          <h2 class="titulo-sinopsis my-5">Sinopsis Mangas</h2>
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="imagenes/Pandora-Hearts.jpg" width="100%" height="225">
+                <div class="card-body">
+                  <h3>Pandora Hearts</h3>
+                  <p class="card-text">Pandora Hearts sigue las aventuras de Oz Vessalius, que al cumplir quince años, acude a la ceremonia de su mayoría de edad. Durante esta, unas misteriosas personas que visten capas rojas interrumpen la ceremonia y destierran a Oz al lugar llamado Abismo por el pecado de su existencia, una dimensión de locura, donde todo supone un peligro constante de una u otra manera. Una serie de acción, misterio y aventuras. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Shonen</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="imagenes/Katekyo_Hitman_Reborn.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>Katekyo hitman Reborn</h3>
+                  <p class="card-text">Tsuna es un estudiante de preparatoria / instituto bastante tímido y que es un fracaso en absolutamente todo: los estudios, los deportes y socializando con los demás. Pero todo cambia de repente cuando ante Tsuna aparece un bebé que dice llamarse Reborn y ser un Tutor Mafioso enviado por la Familia Vongola, una poderosa Familia de la mafia italiana. Reborn acude a Tsuna para entrenarlo como ¡el décimo jefe de los Vongola!.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Shonen</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="imagenes/saiki-k.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>Saiki Kusuo no Psi Nan</h3>
+                  <p class="card-text">Saiki es un estudiante de secundaria con poderosas habilidades psíquicas que trata de vivir una vida normal manteniendo en secreto su verdadera naturaleza a sus compañeros extravagantes y de cualquier otra persona con la que se encuentre.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Comedia</button>
+                    </div>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="imagenes/D.Gray-man.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>D-gray man</h3>
+                  <p class="card-text">D.Gray-man transcurre en un mundo similar a la Inglaterra del siglo XIX. Ante la amenaza de los Akuma, armas demoníacas, surgen los Exorcistas, gente capaz de manipular una misteriosa sustancia divina llamada Inocencia. La historia sigue la lucha de los Exorcistas por detener a la familia Noé, seres humanos con habilidades sobrenaturales, que dicen ser los verdaderos mensajeros de Dios. Allen Walker, protagonista de la historia, podría ser la clave para acabar con esta guerra entre el bien y el mal.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Shonen</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="imagenes/soul-eater.jpg">
+                <div class="card-body">
+                  <h3>Soul Eater</h3>
+                  <p class="card-text">Soul Eater se ambienta en una escuela para técnicos y armas de “shinigami” (Dioses de la muerte), llamada Shibusen, esta escuela se ubica en lo más recóndito del mundo y tiene como principal deber el defender la tierra, evitando la aparición de los “Kishin” (Dios demonio), los cuales acabarían con el mundo, sumergiendo a toda la humanidad en un espiral de locura. Shinigami-Sama, el creador de esta institución, creo dicha escuela con el fin de conseguir armas y técnicos de armas capaces de llevar a cabo el proceso de protección del mundo.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Shonen</button>
+                 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="imagenes/vanitas-no-carte.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>Vanitas no Carte</h3>
+                  <p class="card-text">La historia se desarrolla en Francia del siglo XIX en un mundo steampunk donde hace años los vampiros se enfrentaron en una guerra contra los humanos que causó que su aparente extinción.Pronto se introduce a Noé Archiviste, un joven vampiro a bordo de La Baleine, una aeronave con destino a París. Él está en una misión para encontrar el Libro de Vanitas. A medida que comienza a acercarse a su destino, conoce a un hombre extraño que se hace llamar Vanitas, que casualmente posee dicho libro, quien se encarga de "curar" a los vampiros que han perdido su verdadero nombre.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Shonen</button>
+                 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="imagenes/spyxfamily1.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>Spy x family</h3>
+                  <p class="card-text">El padre, Loid un respetado psiquiatra con un porte elegante. Yor la cariñosa y dulce madre, que tuvo que cuidar a su hermanito desde pequeños. Y no olvidemos a la traviesa pero encantadora Anya, hija pequeña del matrimonio. Una familia perfecta sin ningún secreto. Bueno, si exceptuamos pequeños detalles como que Yor es una asesina a sueldo, Anya es una esper capaz de leer la mente de la gente o Loid es un espía llamado Twilight y la familia es una tapadera para los tres. Pero a parte de estos pequeños detalles, son una familia ideal.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Comedia/button>
+                 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+            <img src="imagenes/tensei-shitara-slime.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>Tensei shitara slime</h3>
+                  <p class="card-text">La serie relata la historia de Satoru Mikami, un asalariado de 37 años que es asesinado tras ser apuñalado por un ladrón y se reencarna en un mundo de espadas y magia como un Slime con poderes únicos y reúne aliados para construir su propia nación de monstruos.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Shonen</button>
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="imagenes/hellsing.png" height="225" width="100%">
+                <div class="card-body">
+                  <h3>Hellsing</h3>
+                  <p class="card-text">Hellsing se centra alrededor de la Orden de Caballeros Protestantes Reales que son los últimos miembros descendientes de Abraham Van Helsing. Su misión es la de proteger a la reina y al país de los no-muertos y otras fuerzas sobrenaturales del infierno.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Gore</button>
+               
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>     
+
+
+    <section id="albumlibros">
+      <div class="album bg-body-tertiary">
+        <div class="container">
+
+          <h2 class="titulo-sinopsis my-5">Sinopsis Libros</h2>
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="imagenes/heavens-special-edition1.png" width="100%" height="225">
+                <div class="card-body">
+                  <h3>Heavens Officials Blessings</h3>
+                  <p class="card-text">Hace ochocientos años, Xie Lian era el príncipe heredero del reino de Xian Le, uno que era amado por sus ciudadanos y el favorito del mundo. Como era de esperar, ascendió a los cielos a una edad muy temprana. Ahora, ochocientos años después, Xie Lian asciende a los Cielos por tercera vez como el hazmerreír de los tres reinos. En su primera tarea como dios, se encuentra con un misterioso demonio que gobierna a los fantasmas y aterroriza a los cielos... pero sin que Xie Lian lo sepa, este rey demonio le ha estado prestando atención durante mucho, mucho tiempo. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Danmei</button>
+               
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="imagenes/mo-dao-zu-shi.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>Grandmaster of Demonic cultivation</h3>
+                  <p class="card-text">Wei Wuxian fue considerado el fundador del denominado cultivo demoníaco, un gran maestro odiado por millones debido al caos que creó. Wuxian fue posteriormente asesinado por poderosos clanes que combinaron fuerzas para derrotarlo antes del comienzo de la historia. Trece años después, reencarna en el cuerpo de un joven llamado Mo Xuanyu a través de un ritual prohibido; Siguiendo una serie de coincidencias tras otra, Wei Wuxian se reencuentra con Lan Wangji, el segundo joven maestro de la secta Gusu Lan, quien siempre fue todo lo opuesto a él, lo que los llevó a tener enfrentamientos en el pasado, lo que marca el inicio de un hilarante viaje luchando contra monstruos y resolviendo misterios.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Danmei</button>
+           
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="imagenes/scum-villains.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>Scum Villains Self Saving System</h3>
+                  <p class="card-text">El semidemonio Luo Binghe surgió de unos orígenes humildes y un pasado torturado para convertirse en un ser sin rival en fuerza y belleza. Pero cuando un ataque de ira le provoca una muerte repentina, Shen Yuan renace en el mundo de la novela en el cuerpo de Shen Qingqiu,destinado a ser horriblemente castigado por los crímenes cometidos contra la protagonista, El nuevo Shen Qingqiu sólo tiene una opción: ganarse la simpatía de Luo Binghe antes de que el joven ascienda al poder, ¡o sufrir el horrible destino de un auténtico villano!</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Danmei</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="imagenes/la guerra de los espejos.png" height="225" width="100%">
+                <div class="card-body">
+                  <h3>La guerra de los espejos</h3>
+                  <p class="card-text">Alyss es la heredera del trono de Marvilia, el lugar mágico donde nació. Pero un día su brillante futuro se rompe en mil pedazos, como un espejo. Su malvada tía asesina a sus padres para hacerse con el poder de Marvilia, y Alyss debe huir de su reino para no correr la misma suerte. Somber, guardián de la seguridad de la princesa, la empuja a saltar por un portal dimensional que la conduce a nuestro mundo. Durante años, Alyss vivirá entre los humanos e incluso recibirá el nuevo nombre de Alicia, tal como la conoció Lewis Carroll. Roja, su malvada tía, temerosa de que Alyss vuelva algún día para reclamar el trono, envía a su más temible sicario en su búsqueda con la misión de matarla. Alyss regresa a su país natal y deberá enfrentarse a su verdadera historia y a sus auténticos poderes. La guerra por el trono de Marvilia ha empezado.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Fantasia</button>
+                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="imagenes/fourth-wing.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>The fourth Wing</h3>
+                  <p class="card-text">Violet Sorrengail, una joven de veinte años, estaba destinada a ingresar en el Cuadrante de Escribas, llevando una vida tranquila entre libros e historia. Sin embargo, su madre ha ordenado a Violet unirse a cientos de candidatos que aspiran a convertirse en la élite de Navarra: jinetes de dragones, Con menos dragones dispuestos a unirse que candidatos, la mayoría mataría a Violet para aumentar sus propias posibilidades de éxito.Sin embargo, a medida que pasa el tiempo, la guerra exterior se vuelve más mortal, los reinos protectores del reino están fallando y el número de muertos sigue en aumento. Peor aún, Violet comienza a sospechar que el liderazgo está ocultando un terrible secreto.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Fantasia</button>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="imagenes/red-dragon.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>El dragón Rojo</h3>
+                  <p class="card-text">Sin una razón de peso, el agente especial Jack Crawford no habría turbado la apacible existencia y el anonimato de Will Graham, el hombre que había conseguido desenmascarar al psicópata doctor Lecter, más conocido en los medios de comunicación como 'Hannibal el Caníbal'. En efecto, las circunstancias que rodean los asesinatos de dos familias en Birmingham y en Atlanta convierten al investigador Graham en un hombre imprescindible del equipo de detectives que investigan el perfil psicológico del monstruo, el 'Dragón Rojo', y las horribles mutilaciones que inflige a sus víctimas.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Misterio</button>
+         
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="imagenes/stars-of-chaos.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>Stars of Caos</h3>
+                  <p class="card-text">El descubrimiento del oro violeta, un combustible vital para las máquinas de vapor, impulsó al imperio de Great Liang a una era de prosperidad. Pero para Chang Geng, un joven criado en la empobrecida frontera norte,Cuando los asaltantes del norte atacan la pequeña aldea de Chang Geng, descubre que la vida que conoce es una mentira.A medida que las naciones enemigas se acercan, Chang Geng sigue a su padrino al corazón de la capital imperial, donde le espera un mayor destino.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Danmei</button>
+         
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+            <img src="imagenes/orv-cover.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>Omniscient Readers Viewpoint</h3>
+                  <p class="card-text">La serie relata la historia de Satoru Mikami, un asalariado de 37 años que es asesinado tras ser apuñalado por un ladrón y se reencarna en un mundo de espadas y magia como un Slime con poderes únicos y reúne aliados para construir su propia nación de monstruos.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Web novel</button>
+               
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="imagenes/thousand-autums.jpg" height="225" width="100%">
+                <div class="card-body">
+                  <h3>Thousand Autumns</h3>
+                  <p class="card-text">Yan Wushi había recorrido un camino lleno de sangre y cadáveres. No creía en la buena naturaleza de la humanidad, más aún, no creía que pudiera haber alguien con gran amabilidad y sentido de la justicia, Un día, Shen Qiao, quien era el líder de la secta del Monte Xuandu, fue desafiado a un duelo pero de alguna manera cayó del acantilado, Yan Wushi pasó por allí abajo,al ver a Shen Qiao que resultó gravemente herido hasta el punto de morir, de repente se le ocurrió una idea perfecta; Después de miles de otoños, ¿quién podría permanecer eterno?
+
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Danmei</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ 
+      
+    </section>  
+
+    </main>
+
+    <footer class="row">
+        <div class="row align-items-center g-lg-5 py-5 m-2" id="inicia-sesion">
+            <div class="col-lg-7 text-center text-lg-start">
+              <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">¿Quieres ser uno de nosotros?</h1>
+              <p class="col-lg-10 fs-4 m-4 p-4" id="texto-inicio-se">Recibe noticias sobre tus series y libros favoritos, ¡no pierdas tus libros! crea tu propia lista de lectura, activa notificaciones y comparte en la comunidad.</p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+              <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Correo</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Contraseña</label>
+                </div>
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Recuerdame
+                  </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">sign up</button>
+                <hr class="my-4">
+                <small class="text-body-secondary">Acepto los terminos y condiciones al dar clic a sign up.</small>
+              </form>
+            </div>
+          </div>
+
+        <div class="col">
+           <h6> Maria jose alvarez </h6>
+        </div>
+        <div class="col">
+           <h6> Tecnochicas summer</h6>
+        </div>
+    </footer>
+
+
+
+
+    <!--link de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
